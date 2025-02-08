@@ -1,6 +1,7 @@
 ---
 layout: home
-title: "Northern Blade Translations"
+title: "Banana Translations"
+pagination:
+  enabled: "true"
 ---
 
-# Chapters
