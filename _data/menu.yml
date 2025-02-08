@@ -1,0 +1,27 @@
+- title: Main Menu
+  subfolderitems:
+    - name: "Home"
+      url: "../"
+      weight: 2
+    - name: "Novels"
+      url: "#"
+      weight: 3
+      subsubfolderitems:
+        - name: "Legend of the Northern Blade"
+          url: "/LNB/"
+          weight: 2
+        - name: "Star Instructor Master Baek"
+          url: "/SIMB/"
+          weight: 2
+        - name: "Heroes"
+          url: "/HERO/"
+          weight: 2
+        - name: "Absolute Warrior"
+          url: "/ABSW/"
+          weight: 2
+        - name: "Surviving as a Genius on Borrowed Time"
+          url: "/FBC/"
+          weight: 2
+    - name: "About"
+      url: "/about.html"
+      weight: 3
