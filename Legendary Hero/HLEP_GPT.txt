@@ -1,12 +1,3 @@
----
-layout: postLHAHS
-title: "Chapter 339"
-comments: true
-tags: [lhahs]
-categories: [lhahs]
-date: 2025-02-08 23:03:00 +0800
----
-
 That afternoon, inside the Seiren lower-class classroom, Leo was preparing for the next lesson.
 
 Like Lumene, Seiren didn't only offer specialized courses. There were various general education classes as well. Among them, the most important was the combat magic class.
@@ -59,7 +50,11 @@ Leo, watching the excited reactions, looked puzzled.
 
 "Why are they so worked up?"
 
-"Lyle, you don't know?" Angel, seated next to him, gave a bitter smile. "Our lower class has never had a single practical combat lesson."
+"Lyle, you don't know?"
+
+Angel, seated next to him, gave a bitter smile.
+
+"Our lower class has never had a single practical combat lesson."
 
 "You've only studied theory all this time?"
 
@@ -91,7 +86,7 @@ The lower-class students were still admiring the training grounds when…
 
 "Mr. Autren?"
 
-Laura turned in surprise. She looked at Autren, the homeroom teacher of Seiren's first-year advanced class 1.
+Laura turned in surprise. She looked at Autren, the homeroom teacher of Seiren's first-year advanced Class 1.
 
 "When I inquired at the faculty office, I was told our class had been granted permission to use the grounds. Why is the advanced class here?"
 
@@ -99,7 +94,7 @@ Laura asked, clearly bewildered.
 
 Autren chuckled.
 
-"Ah, I suppose the faculty didn't inform you? These training grounds were originally scheduled for our advanced class 1 all afternoon. However, I took pity on your lower-class students and *graciously* allowed a joint session. You should be grateful, lower-class students."
+"Ah, I suppose the faculty didn't inform you? These training grounds were originally scheduled for our advanced Class 1 all afternoon. However, I took pity on your lower-class students and *graciously* allowed a joint session. You should be grateful, lower-class students."
 
 Laura's face hardened.
 
@@ -139,7 +134,9 @@ They had been placed in the lower class due to their lack of Stellar Magic profi
 
 Some believed that aside from Stellar Magic, they surpassed the advanced students in overall ability.
 
-Angel clenched her fists tightly. "The advanced class…"
+Angel clenched his fists tightly.
+
+"The advanced class…"
 
 "And since this is a combat magic lesson, there is only one rule. The duel must be fought using *only* Stellar Magic!"
 
@@ -179,15 +176,17 @@ Bells' mouth snapped shut. Lea Tingel. A direct descendant of the Tingel family 
 
 As Bells remained speechless, Autren let out a derisive chuckle.
 
-At that moment, Angel spoke. "Mr. Autren, if this is a duel, then does that mean we are free to fight Lea with everything we have?"
+At that moment, Angel spoke.
+
+"Mr. Autren, if this is a duel, then does that mean we are free to fight Lea with everything we have?"
 
 Autren's expression stiffened at Angel's defiant gaze.
 
 "How insolent. Are you, a mere student, challenging a teacher's authority? Very well. I will permit the duel. However, as the price for challenging my authority, if you lose, you will be immediately expelled. Do you still wish to proceed?"
 
-Angel flinched. Lea's face tensed in alarm.
+Angel flinched. Lea's face tensed in alarm. Angel's clenched fists trembled at his sides before he lowered his head.
 
-Angel's clenched fists trembled at her sides before she lowered her head. "I apologize. I spoke out of turn."
+"I apologize. I spoke out of turn."
 
 "Hmph. Then, before we assign the dueling pairs..." Autren smirked. "I will personally teach you lower-class students what real combat magic is. You there, the white-haired lower-class student."
 
@@ -221,7 +220,7 @@ Lea clasped her hands together, eyes shining with anticipation.
 
 "Why is Mr. Autren even bothering to duel a lower-class reject? It's a complete waste of time."
 
-One of the advanced class 1 students scowled in irritation.
+One of the advanced Class 1 students scowled in irritation.
 
 Lea's eyes flared. *Who the hell is he calling a reject?*
 
@@ -247,7 +246,7 @@ With an apologetic look, she said, "Oh my, I'm sorry. I meant to stomp on a bug.
 
 Laura sighed as she watched the boy groaning in pain.
 
-The other advanced class 1 students glanced at Lea, who was smiling innocently, and seemed to believe she had, in fact, been stepping on a bug.
+The other advanced Class 1 students glanced at Lea, who was smiling innocently, and seemed to believe she had, in fact, been stepping on a bug.
 
 "But... are there even bugs in the training hall?"
 
