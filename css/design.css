@@ -3,19 +3,19 @@
   border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
-  background-color: #b3dbba;
+  background-color: #b5b4c5;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
 .night-mode {
-	background-color: white;
-	color: #222222;
+	background-color: #444444;
+	color: white;
 }
 
 .night-mode-quotes {
-	color: #16537e;
+	color: #fcd299;
 }
 
 .day-mode {
