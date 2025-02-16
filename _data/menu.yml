@@ -4,8 +4,12 @@
       url: "../"
       weight: 2
     - name: "Novels"
-      url: "/LHAHS/"
+      url: "#"
       weight: 3
+      subsubfolderitems:
+        - name: "The Legendary Hero is an Academy Honors Student"
+          url: "/LHAHS/"
+          weight: 2
     - name: "About"
       url: "/about.html"
       weight: 3
