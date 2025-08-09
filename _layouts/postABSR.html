@@ -6,11 +6,20 @@ layout: default
 
   <header class="post-header">
 	<br />
-    <h1 class="post-title p-name" itemprop="name headline">Absolute Regression {{ page.title | escape }}</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Absolute Regression</h1>
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">	
 <div style="font-size: 16px;" id="content">
+  {% include JS_buttons.html %}
+  <p class="foodie">TL: FoodieMonster007</p>
+  <p class="foodie"><br /></p>
 		{{ content }}
 </div>
 <hr>
