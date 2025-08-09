@@ -1,0 +1,54 @@
+<script type="text/javascript" src="/js/changeMode.js"></script>
+
+{% if page.comments %}
+<script id="fastcomments" src="https://cdn-eu.fastcomments.com/js/embed-v2.min.js"></script>
+<div id="fastcomments-widget"></div>
+<script>
+    const fastcommentsConfig = {
+        tenantId: 'eu-eFwXogixzsA',
+        urlId: "{{ site.url }}{{ page.url }}", // <-- The URL fix
+        pageReactConfig: {
+            showUsers: false,
+            reacts: [
+                {id: 'superb', src: 'https://northbladetl.com/Images/superb.svg'},
+                {id: 'love', src: 'https://northbladetl.com/Images/love.svg'},
+                {id: 'wow', src: 'https://northbladetl.com/Images/wow.svg'},
+                {id: 'sad', src: 'https://northbladetl.com/Images/sad.svg' },
+                {id: 'laugh', src: 'https://northbladetl.com/Images/laugh.svg' },
+                {id: 'angry', src: 'https://northbladetl.com/Images/angry.svg' },
+            ]
+        }
+    };
+
+    (function() {
+        const setCommentMode = document.getElementById('setMode');
+        const instance = window.FastCommentsUI(document.getElementById('fastcomments-widget'), fastcommentsConfig);
+
+        if (setCommentMode) {
+             setCommentMode.addEventListener('click', function() {
+                if (document.body.classList.contains('day')) {
+                    document.body.classList.remove('day');
+                } else {
+                    document.body.classList.add('day');
+                }
+                instance.update(fastcommentsConfig); // This forces the theme to refresh
+            });
+        }
+
+        window.addEventListener('load', function() {
+            if (document.getElementById('wrappertext').classList.contains('day-mode')) {
+                document.body.classList.add('day');
+            }
+            instance.update(fastcommentsConfig);
+        });
+    })();
+</script>
+
+<style>
+    .day {
+        background: #fff;
+        color: #222;
+    }
+</style>
+
+{% endif %}
