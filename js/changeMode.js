@@ -1,44 +1,72 @@
-// Change Font Size
-var currentSize = 0;
-function changeFontSize(change) {  
-	if (change == '0') {
-		document.getElementById("content").style.fontSize = "16px";
-		var quote = document.getElementsByClassName("night-mode-quotes");
+window.onload = function() {
+  if(localStorage.getItem('fontSize')) {
+		var storedSize = localStorage.getItem('fontSize');
+		setFontSize(storedSize);
+	}
+	if(localStorage.getItem('colorScheme')) {
+		var storedColor = localStorage.getItem('colorScheme');
+		setMode(storedColor);
+	}
+}
+
+// Set Font Size Automatically
+function setFontSize(value) {
+	document.getElementById("content").style.fontSize = value;
+	var quote = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quote.length; i++) {
-		  quote[i].style.fontSize = "16px";
+			quote[i].style.fontSize = value;
+		}
+}
+
+// Set Day/Night Mode Automatically
+function setMode(value) {
+	if (value == "day") {
+		document.getElementById("wrappertext").classList.toggle("day-mode");
+		document.getElementById("chapterTitle").classList.toggle("day-mode-heading");
+		var quotes = document.getElementsByClassName("night-mode-quotes");
+		for (var i = 0; i < quotes.length; i++) {
+			quotes[i].classList.toggle("day-mode-quotes")
 		}
 	}
-     else {
-		currentSize = parseInt(document.getElementById("content").style.fontSize);
-        document.getElementById("content").style.fontSize = currentSize + change + 'px';
+}
+
+// Change Font Size
+var currentSize = 0;
+var selectedSize = 0;
+function changeFontSize(change) {	
+	if (change == '0') {
+		selectedSize = "16px";
+		localStorage.setItem('fontSize', selectedSize);
+		document.getElementById("content").style.fontSize = selectedSize;
 		var quote = document.getElementsByClassName("night-mode-quotes");
 		for (var i = 0; i < quote.length; i++) {
-		  quote[i].style.fontSize = currentSize + change + 'px';
+			quote[i].style.fontSize = selectedSize;
 		}
-	}	
+	}
+	else {
+		currentSize = parseInt(document.getElementById("content").style.fontSize);
+		selectedSize = currentSize + change + 'px';
+		localStorage.setItem('fontSize', selectedSize);
+		document.getElementById("content").style.fontSize = selectedSize;
+		var quote = document.getElementsByClassName("night-mode-quotes");
+		for (var i = 0; i < quote.length; i++) {
+			quote[i].style.fontSize = selectedSize;
+		}
+	}
 }
 
 //Change Color
 function changeWrapColor() {
 	document.getElementById("wrappertext").classList.toggle("day-mode");
+	document.getElementById("chapterTitle").classList.toggle("day-mode-heading");
 	var quotes = document.getElementsByClassName("night-mode-quotes");
 	for (var i = 0; i < quotes.length; i++) {
-	  quotes[i].classList.toggle("day-mode-quotes")
+		quotes[i].classList.toggle("day-mode-quotes")
+	}
+	if (document.getElementById("wrappertext").classList.contains("day-mode")) {
+		localStorage.setItem('colorScheme', "day");
+	}
+	else {
+		localStorage.setItem('colorScheme', "night");
 	}
 }
-
-// When the user clicks on the button, toggle between hiding and showing the dropdown content
-function navbarDropdown() {
-  document.getElementById("novelDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var novelDropdown = document.getElementById("novelDropdown");
-    if (novelDropdown.classList.contains('show')) {
-      novelDropdown.classList.remove('show');
-    }
-  }
-}
-

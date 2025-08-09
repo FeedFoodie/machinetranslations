@@ -20,15 +20,24 @@
 
 .day-mode {
 	background-color: white;
-	color: #555555;
+	color: #222222;
 }
 
 .day-mode-quotes {
-	color: #8095fb;
+	color: #4e6bf9;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.day-mode-heading {
+  color: #63627f;
+}
+
+h1, h2 {
 	color: #b6b5d4;
+  text-align: center;
+}
+
+h3, h4, h5, h6 {
+  color: #b6b5d4;
 }
 
 a:link {

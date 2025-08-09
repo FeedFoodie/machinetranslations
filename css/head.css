@@ -40,7 +40,7 @@
 	float: none;
 	position: absolute;
 	background: #fdfdfd;
-	min-width: 250px;
+	min-width: 350px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 9999;
 }
@@ -63,12 +63,18 @@
 
 @media only screen and (min-width: 600px) {
 	.header-link {
+		margin-left: 50px !important;
+		margin-right: 0px !important;
+	}
+
+	.header-dropcontent {
 		font-size: 18px;
 	}
 
 	.header-droplink {
-		margin-left: 100px !important;
-		margin-right: 100px !important;
+		font-size: 18px;
+		margin-left: 150px !important;
+		margin-right: 150px !important;
 	}
 
 	.menu {
@@ -100,10 +106,10 @@
 	.dropdown-content {
 		display: none;
 		right: unset;
-		float: center;
+		text-align: center;
 		position: absolute;
 		background-color: #b5b4c5;
-		min-width: 250px;
+		min-width: 350px;
 		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		z-index: 9999;
 	}
@@ -131,7 +137,8 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
+	max-width: 80%;
+	height: auto;
 }
 
 .foodie {	}
@@ -140,13 +147,48 @@ img {
 	color: #fcd299;
 }
 
-.fooodie, .ffoodie, .fooddie, .foodiie, .foodiee, .theGreatT20, .theGreatT2O, .zeGreatT20, .theAwesomeT20, .theGoatT20 {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0,0,0,0);
-	border: 0;
+.fooodie, 
+.ffoodie, 
+.fooddie, 
+.theGreatT20, 
+.theGreatT2O, 
+.zeGreatT20, 
+.theAwesomeT20, 
+.theGoatT20 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    font-size: 1px;
+    margin-bottom: 0px;
+}
+
+.day-mode .fooodie, 
+.day-mode .ffoodie, 
+.day-mode .fooddie, 
+.day-mode .theGreatT20, 
+.day-mode .theGreatT2O, 
+.day-mode .zeGreatT20, 
+.day-mode .theAwesomeT20, 
+.day-mode .theGoatT20 {
+    color: white; 
+}
+
+.night-mode .fooodie,
+.night-mode .ffoodie,
+.night-mode .fooddie,
+.night-mode .theGreatT20,
+.night-mode .theGreatT2O,
+.night-mode .zeGreatT20,
+.night-mode .theAwesomeT20,
+.night-mode .theGoatT20 {
+    color: #444444;
+}
+
+
+.foodiie, 
+.foodiee {
+    font-size: 1px;
+    color: transparent;
+    letter-spacing: -10px;
+    margin-bottom: 0px;
 }
