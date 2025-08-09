@@ -18,7 +18,7 @@
   </label>
 
   <div class="trigger">
-  	{% for item in site.data.menu %}
+    {% for item in site.data.menu %}
       <ul class="menu">
         {% for entry in item.subfolderitems %}
           <li>
@@ -28,14 +28,14 @@
                 <div id="novelDropdown" class="dropdown-content">
                   {% for subentry in entry.subsubfolderitems %}
                     <li>
-                       <a class="header-link" href="{{ subentry.url }}">{{ subentry.name }}</a>
+                       <a class="header-dropcontent" href="{{ subentry.url }}" target="_blank">{{ subentry.name }}</a>
                     </li>
                   {% endfor %}
                 </div>
                </ul>
             {% else %}
               <ul class="dropdown">
-                <button class="dropbtn header-link" onclick="location.href='{{ entry.url }}'" type="button">{{ entry.name }}</button>
+                <button class="dropbtn header-link" onclick="window.open('{{ entry.url }}', '_blank')" type="button">{{ entry.name }}</button>
               </ul>              
             {% endif %}
           </li>
@@ -45,7 +45,7 @@
   </div>
 
 </nav>
-	
+  
 </div>
 
 </header>
