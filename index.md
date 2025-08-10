@@ -5,4 +5,3 @@ pagination:
   enabled: true
 ---
 
-{%- include home.content.md -%}
