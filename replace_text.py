@@ -15,8 +15,11 @@ replacements = {
     " nyang": " taels",
     "Jingyeok": "Blitz",
     "isolated training": "seclusion training",
+    "bodyguard martial artist": "bodyguard",
     "temporary Cult Leader": "Acting Cult Leader",
-    "First Young Master": "First Young Lord"
+    "First Young Master": "First Young Lord",
+    "Majang Hu War": "Great Demonic-Orthodox War",
+    "Majang War": "Great Demonic-Orthodox War"
 }
 
 # Loop through each directory in the list
