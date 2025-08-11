@@ -11,7 +11,7 @@ replacements = {
     "’": "'",
     "‘": "'",
     "…": "...",
-    "Heavenly Silkworm Thread": "Heavenly Silk"
+    "saber": "dao"
 }
 
 # Loop through each directory in the list
