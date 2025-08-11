@@ -13,12 +13,9 @@ replacements = {
     "…": "...",
     "saber": "dao",
     " nyang": " taels",
-    "student": "disciple",
     "rare quality": "treasured",
-    "Group Leader": "Division Leader",
-    "Daecheon Mountain": "the Great Sky Peak",
-    "Daechun Mountain": "the Great Sky Peak",
-    "Thousand Flower Palace Owner": "Thousand Flower Palace Chairwoman"
+    "isolated training": "seclusion training",
+    "temporary Cult Leader": "Acting Cult Leader"
 }
 
 # Loop through each directory in the list
