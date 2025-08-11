@@ -12,7 +12,10 @@ replacements = {
     "‘": "'",
     "…": "...",
     "saber": "dao",
+    " nyang": " taels",
     "student": "disciple",
+    "rare quality": "treasured",
+    "Group Leader": "Division Leader",
     "Thousand Flower Palace Owner": "Thousand Flower Palace Chairwoman"
 }
 
