@@ -13,9 +13,10 @@ replacements = {
     "…": "...",
     "saber": "dao",
     " nyang": " taels",
-    "rare quality": "treasured",
+    "Jingyeok": "Blitz",
     "isolated training": "seclusion training",
-    "temporary Cult Leader": "Acting Cult Leader"
+    "temporary Cult Leader": "Acting Cult Leader",
+    "First Young Master": "First Young Lord"
 }
 
 # Loop through each directory in the list
