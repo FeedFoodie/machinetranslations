@@ -19,7 +19,8 @@ replacements = {
     "temporary Cult Leader": "Acting Cult Leader",
     "First Young Master": "First Young Lord",
     "Majang Hu War": "Great Demonic-Orthodox War",
-    "Majang War": "Great Demonic-Orthodox War"
+    "Majang War": "Great Demonic-Orthodox War",
+    "Myeongsim Physician": "Clear Heart Hospital"
 }
 
 # Loop through each directory in the list
