@@ -16,6 +16,7 @@ replacements = {
     "student": "disciple",
     "rare quality": "treasured",
     "Group Leader": "Division Leader",
+    "Daecheon Mountain": "the Great Sky Peak",
     "Thousand Flower Palace Owner": "Thousand Flower Palace Chairwoman"
 }
 
