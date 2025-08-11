@@ -11,7 +11,8 @@ replacements = {
     "’": "'",
     "‘": "'",
     "…": "...",
-    "saber": "dao"
+    "saber": "dao",
+    "Thousand Flower Palace Owner": "Thousand Flower Palace Chairwoman"
 }
 
 # Loop through each directory in the list
