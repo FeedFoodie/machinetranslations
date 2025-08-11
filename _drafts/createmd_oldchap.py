@@ -7,7 +7,7 @@ def create_markdown_files_cli():
     # --- Get Today's Date ---
     today = datetime.now()
     #date_str = today.strftime("%Y-%m-%d")
-    date_str = "2025-08-09"
+    date_str = "2025-08-08"
 
     # --- Get User Input from Command Line ---
     try:
