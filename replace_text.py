@@ -21,7 +21,12 @@ replacements = {
     "Majang Hu War": "Great Demonic-Orthodox War",
     "Majang War": "Great Demonic-Orthodox War",
     "Myeongsim Physician": "Clear Heart Hospital",
-    "Demon Physician": "Demonic Physician"
+    "Demon Physician": "Demonic Physician",
+    "Ahjussi": "Uncle",
+    "An Hupyeong": "Ahn Hupyeong",
+    "An Cheongwang": "Ahn Cheongwang",
+    "Young Chief": "Young Sect Leader",
+    "crescent moon Faceless Warrior": "Crescent Moon Faceless Warrior"
 }
 
 # Loop through each directory in the list
