@@ -20,7 +20,7 @@ replacements = {
     "Ahjussi": "Uncle",
     "Young Chief": "Young Sect Leader",
     "crescent moon Faceless Warrior": "Crescent Moon Faceless Warrior",
-    "Captain Kang": "Manager Kang",
+    "Captain Lee": "Commander Lee",
     "branch master": "branch manager"
 }
 
