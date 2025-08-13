@@ -20,8 +20,6 @@ replacements = {
     "Mister": "Uncle",
     "Young Chief": "Young Sect Leader",
     "crescent moon Faceless Warrior": "Crescent Moon Faceless Warrior",
-    "Captain Do": "Commander Do",
-    "Branch Captain": "Branch Manager"
 }
 
 # Loop through each directory in the list
