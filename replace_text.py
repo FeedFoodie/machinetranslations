@@ -17,7 +17,7 @@ replacements = {
     "isolated training": "seclusion training",
     "bodyguard martial artist": "bodyguard",
     "temporary Cult Leader": "Acting Cult Leader",
-    "Ahjussi": "Uncle",
+    "Mister": "Uncle",
     "Young Chief": "Young Sect Leader",
     "crescent moon Faceless Warrior": "Crescent Moon Faceless Warrior",
     "Captain Do": "Commander Do",
