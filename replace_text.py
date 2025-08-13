@@ -19,7 +19,8 @@ replacements = {
     "temporary Cult Leader": "Acting Cult Leader",
     "Ahjussi": "Uncle",
     "Young Chief": "Young Sect Leader",
-    "crescent moon Faceless Warrior": "Crescent Moon Faceless Warrior"
+    "crescent moon Faceless Warrior": "Crescent Moon Faceless Warrior",
+    "Jang Dal": "Kang Dal"
 }
 
 # Loop through each directory in the list
