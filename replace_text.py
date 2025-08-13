@@ -21,7 +21,7 @@ replacements = {
     "Young Chief": "Young Sect Leader",
     "crescent moon Faceless Warrior": "Crescent Moon Faceless Warrior",
     "Captain Lee": "Commander Lee",
-    "branch master": "branch manager"
+    "Branch Captain": "Branch Manager"
 }
 
 # Loop through each directory in the list
