@@ -116,7 +116,7 @@ jobs:
             
             # --- ROBOTS.TXT FILTERING LOGIC ---
             # Check if the generated URL matches any of your Disallow rules.
-            if [[ "$FULL_URL" == *"/ABSR/chapters/"* || \
+            if [[ "$FULL_URL" == *"/ABSR/chapters/"* ]]; then
               echo "🚫 Filtering out disallowed URL: $FULL_URL"
             else
               echo "✅ Adding URL to submission list: $FULL_URL"
