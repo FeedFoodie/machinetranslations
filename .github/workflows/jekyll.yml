@@ -93,26 +93,34 @@ jobs:
       - name: Identify and Filter Changed URLs
         id: changed_files
         run: |
-          # Get the list of changed markdown/html files between the last two commits
-          FILES=$(git diff --name-only HEAD~1 HEAD | grep -E "\.(_posts|md|html)$" || true)
+          # Get the list of changed post files between the last two commits
+          FILES=$(git diff --name-only HEAD~1 HEAD | grep "_posts/.*\.md$" || true)
           
           if [ -z "$FILES" ]; then
-            echo "No relevant files changed. Exiting."
+            echo "No blog posts changed. Exiting."
             echo "URLS=" >> $GITHUB_ENV
             exit 0
           fi
           
-          # IMPORTANT: Replace this with your actual site URL
           SITE_URL="https://mtl.northbladetl.com"
           URLS_TO_SUBMIT=""
           
           echo "--- Checking changed files ---"
           for FILE in $FILES; do
-            # This logic converts a file path to a URL.
-            # YOU MAY NEED TO ADJUST THIS based on your Jekyll permalink settings.
-            # This example assumes a clean URL structure (e.g., 'about.md' -> '/about/').
-            URL_PATH=$(echo $FILE | sed 's/\.md$//' | sed 's/\.html$//' | sed 's/index$//')
-            FULL_URL="$SITE_URL/$URL_PATH/"
+            # Get filename without directory and extension: e.g., 2025-08-13-ABSR729
+            FILENAME=$(basename "$FILE" .md)
+
+            # Remove the date part to get the slug: e.g., ABSR729
+            SLUG=$(echo "$FILENAME" | sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2}-//')
+
+            # Extract the letters part for the category: e.g., ABSR
+            CATEGORY_UPPER=$(echo "$SLUG" | sed -E 's/[0-9]+$//')
+
+            # Convert category to lowercase: e.g., absr
+            CATEGORY_LOWER=$(echo "$CATEGORY_UPPER" | tr '[:upper:]' '[:lower:]')
+
+            # Construct the final, correct URL
+            FULL_URL="$SITE_URL/$CATEGORY_LOWER/$SLUG.html"
             
             # --- ROBOTS.TXT FILTERING LOGIC ---
             # Check if the generated URL matches any of your Disallow rules.
