@@ -20,7 +20,8 @@ replacements = {
     "Ahjussi": "Uncle",
     "Young Chief": "Young Sect Leader",
     "crescent moon Faceless Warrior": "Crescent Moon Faceless Warrior",
-    "Jang Dal": "Kang Dal"
+    "Captain Kang": "Manager Kang",
+    "branch master": "branch manager"
 }
 
 # Loop through each directory in the list
