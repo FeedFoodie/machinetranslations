@@ -8,13 +8,23 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
 
-  {%- if page.description -%}
-    <meta name="description" content="{{ page.description | strip_html | strip_newlines | truncatewords: 25, '...' }}">
-  {%- elsif page.excerpt -%}
-    <meta name="description" content="{{ page.content | strip_html | strip_newlines | truncatewords: 25, '...' }}">
-  {%- else -%}
-    <meta name="description" content="{{ site.tagline | strip_html | strip_newlines | truncatewords: 25, '...' }}">
+  {%- assign final_description = site.tagline -%}
+
+  {%- capture tag_based_description -%}
+    {%- case page.tags.first -%}
+      {%- when 'absr' -%}Absolute Regression {{ page.title }}
+    {%- endcase -%}
+  {%- endcapture -%}
+
+  {%- if tag_based_description and tag_based_description != "" -%}
+    {%- assign final_description = tag_based_description | strip -%}
   {%- endif -%}
+
+  {%- if page.description -%}
+    {%- assign final_description = page.description -%}
+  {%- endif -%}
+
+  <meta name="description" content="{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}">
 
   <!-- highlight.js support -->
   <link rel="stylesheet" href="/js/highlightjs/styles/format.css">
