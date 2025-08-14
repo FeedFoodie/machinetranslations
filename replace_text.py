@@ -19,7 +19,7 @@ replacements = {
     "temporary Cult Leader": "Acting Cult Leader",
     "Mister": "Uncle",
     "Young Chief": "Young Sect Leader",
-    "crescent moon Faceless Warrior": "Crescent Moon Faceless Warrior",
+    "Geom Director": "Director Geom",
 }
 
 # Loop through each directory in the list
