@@ -13,7 +13,6 @@
         - name: "Absolute Regression"
           url: "/ABSR/"
           weight: 2
-      subsubfolderitems:
-        - name: "Queen of Weapons"
+=       - name: "Queen of Weapons"
           url: "/QOW/"
           weight: 2
