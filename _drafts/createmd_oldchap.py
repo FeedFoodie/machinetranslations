@@ -4,13 +4,27 @@ def create_markdown_files_cli():
     """
     Generates markdown files with YAML front matter based on command-line input.
     """
-    # --- Get Today's Date ---
-    today = datetime.now()
-    #date_str = today.strftime("%Y-%m-%d")
-    date_str = "2025-08-08"
+    # --- Series Configuration ---
+    # Maps lowercase abbreviation to the capitalization needed for filenames/layouts
+    SERIES_CONFIG = {
+        'qow': 'QOW',
+        'asbw': 'ABSR',
+        # Add other series here as needed
+    }
 
     # --- Get User Input from Command Line ---
     try:
+        # Ask for the series
+        series_abbr = input("Enter the series abbreviation (e.g., qow, absr): ").strip().lower()
+        if series_abbr not in SERIES_CONFIG:
+            print(f"\n[Error] Invalid series abbreviation. Please use one of: {', '.join(SERIES_CONFIG.keys())}")
+            return
+
+        # Ask for the date
+        date_str = input("Enter the date (YYYY-MM-DD): ").strip()
+        # Validate date format to prevent errors later
+        datetime.strptime(date_str, "%Y-%m-%d")
+
         # Ask for the range of numbers for the filenames
         start_num_str = input("Enter the starting number (e.g., 401): ").strip()
         end_num_str = input("Enter the ending number (e.g., 403): ").strip()
@@ -26,31 +40,38 @@ def create_markdown_files_cli():
             print("\n[Error] Starting number cannot be greater than the ending number.")
             return
 
-        # Combine today's date with the user-provided time
+        # Combine the user-provided date and time
         start_time = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
 
     except ValueError:
-        print("\n[Error] Invalid input. Please enter valid numbers and a time in HH:MM format.")
+        print("\n[Error] Invalid input. Please enter a valid date (YYYY-MM-DD), numbers, and time (HH:MM).")
         return
 
     # --- Generate Files ---
     print("\n--- Generating Files ---")
     files_created_count = 0
     current_time = start_time
+    
+    # Get the correct capitalization for the filename from the config
+    filename_series_prefix = SERIES_CONFIG[series_abbr]
+
     for i in range(start_num, end_num + 1):
-        # Format the filename, e.g., 2025-08-09-ABSR401.md
-        filename = f"{date_str}-ABSR{i}.md"
+        # Format the number with leading zeros to be 3 digits (e.g., 1 -> "001")
+        number_str = f"{i:03d}"
+        
+        # Format the filename, e.g., 2025-08-07-QOW401.md
+        filename = f"{date_str}-{filename_series_prefix}{number_str}.md"
         
         # Format the date for the YAML content, including timezone
         yaml_date = current_time.strftime("%Y-%m-%d %H:%M:%S +0800")
 
-        # Create the YAML content
+        # Create the YAML content dynamically based on the series abbreviation
         yaml_content = f"""---
-layout: postABSR
+layout: post{filename_series_prefix}
 title: ""
 comments: true
-tags: [absr]
-categories: [absr]
+tags: [{series_abbr}]
+categories: [{series_abbr}]
 date: {yaml_date}
 ---
 """
