@@ -16,11 +16,11 @@ During a military drill, Sergeant Yoon Seoyi of the Republic of Korea's Special 
 
 "Please… live my life in my place."
 
-The moment Seoyi grasped the woman's outstretched hand as if possessed, a contract was formed. In accordance with Estella Cartein's earnest wish, Yoon Seoyi's soul became bound to Estella's body.
+The moment Seoyi grasped the woman's outstretched hand as if possessed, a contract was formed. In accordance with Estella Cardein's earnest wish, Yoon Seoyi's soul became bound to Estella's body.
 
-After enduring such absurdity and plummeting into a bottomless pit, Yoon Seoyi regained consciousness to discover she had become Estella, the 'Embarassment of Cartein', a timid girl who couldn't even speak properly in front of others. Worse yet, she now found herself as the daughter of the lord of Winterfall territory, where demonic beasts appeared without warning.
+After enduring such absurdity and plummeting into a bottomless pit, Yoon Seoyi regained consciousness to discover she had become Estella, the 'Embarassment of Cardein', a timid girl who couldn't even speak properly in front of others. Worse yet, she now found herself as the daughter of the lord of Winterfall territory, where demonic beasts appeared without warning.
 
-Thus begins the story of Estella Cartein, who retained all memories of the former Estella, a girl whose only pastime was reading quietly alone, and of Yoon Seoyi, a weapons expert and former special forces operative, as they work to transform Winterfall into a military powerhouse.
+Thus begins the story of Estella Cardein, who retained all memories of the former Estella, a girl whose only pastime was reading quietly alone, and of Yoon Seoyi, a weapons expert and former special forces operative, as they work to transform Winterfall into a military powerhouse.
 
 ## Novel Raws
 
