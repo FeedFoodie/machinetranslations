@@ -13,6 +13,6 @@
         - name: "Absolute Regression"
           url: "/ABSR/"
           weight: 2
-=       - name: "Queen of Weapons"
+        - name: "Queen of Weapons"
           url: "/QOW/"
           weight: 2
