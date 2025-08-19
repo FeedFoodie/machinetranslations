@@ -20,7 +20,7 @@ replacements = {
     "Mister": "Uncle",
     "Young Chief": "Young Sect Leader",
     "Geom Director": "Director Geom",
-    "Blue Forest": "Azure Forest"
+    "Reusilin": "Ruslin"
 }
 
 # Loop through each directory in the list
