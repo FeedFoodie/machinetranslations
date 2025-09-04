@@ -22,7 +22,8 @@ replacements = {
     "Geom Director": "Director Geom",
     "freelancers": "mercenaries",
     "freelancer": "mercenary",
-    "My father": "Father"
+    "My father": "Father",
+    "Blade Demon clan": "Blade Demon Sect"
 }
 
 # Loop through each directory in the list
