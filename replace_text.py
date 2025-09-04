@@ -20,7 +20,8 @@ replacements = {
     "Mister": "Uncle",
     "Young Chief": "Young Sect Leader",
     "Geom Director": "Director Geom",
-    "Reusilin": "Ruslin"
+    "freelancers": "mercenaries",
+    "freelancer": "mercenary"
 }
 
 # Loop through each directory in the list
