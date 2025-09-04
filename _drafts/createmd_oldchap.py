@@ -1,24 +1,16 @@
 from datetime import datetime, timedelta
 
-def create_markdown_files_cli():
-    """
-    Generates markdown files with YAML front matter based on command-line input.
-    """
-    # --- Series Configuration ---
-    # Maps lowercase abbreviation to the capitalization needed for filenames/layouts
-    SERIES_CONFIG = {
-        'qow': 'QOW',
-        'asbw': 'ABSR',
-        # Add other series here as needed
-    }
+# Define the configuration dictionary at the top level
+SERIES_CONFIG = {
+    "absr": "ABSR",
+    # Add other series as needed
+}
 
+def create_markdown_files_cli():
     # --- Get User Input from Command Line ---
     try:
         # Ask for the series
-        series_abbr = input("Enter the series abbreviation (e.g., qow, absr): ").strip().lower()
-        if series_abbr not in SERIES_CONFIG:
-            print(f"\n[Error] Invalid series abbreviation. Please use one of: {', '.join(SERIES_CONFIG.keys())}")
-            return
+        series_abbr = "absr"
 
         # Ask for the date
         date_str = input("Enter the date (YYYY-MM-DD): ").strip()
