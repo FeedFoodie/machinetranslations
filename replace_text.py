@@ -21,7 +21,8 @@ replacements = {
     "Young Chief": "Young Sect Leader",
     "Geom Director": "Director Geom",
     "freelancers": "mercenaries",
-    "freelancer": "mercenary"
+    "freelancer": "mercenary",
+    "My father": "Father"
 }
 
 # Loop through each directory in the list
