@@ -23,7 +23,11 @@ replacements = {
     "freelancers": "mercenaries",
     "freelancer": "mercenary",
     "My father": "Father",
-    "Blade Demon clan": "Blade Demon Sect"
+    "Blade Demon clan": "Blade Demon Sect",
+    "Demonic Esssence Pill": "Demonic Essence Pill",
+    "Cheonoeshindan": "Azure Jade Divine Pill",
+    "Cheonwoeshindan": "Azure Jade Divine Pill",
+    "***": "{sep}"
 }
 
 # Loop through each directory in the list
