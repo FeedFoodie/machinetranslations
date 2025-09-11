@@ -19,7 +19,6 @@ replacements = {
     "temporary Cult Leader": "Acting Cult Leader",
     "Mister": "Uncle",
     "Young Chief": "Young Sect Leader",
-    "Geom Director": "Director Geom",
     "freelancers": "mercenaries",
     "freelancer": "mercenary",
     "My father": "Father",
@@ -27,6 +26,7 @@ replacements = {
     "Demonic Esssence Pill": "Demonic Essence Pill",
     "Cheonoeshindan": "Azure Jade Divine Pill",
     "Cheonwoeshindan": "Azure Jade Divine Pill",
+    "Blue Mountain Sword": "Blue Mountain Swordsman",
     "***": "{sep}"
 }
 
