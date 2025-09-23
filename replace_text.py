@@ -26,7 +26,6 @@ replacements = {
     "Demonic Esssence Pill": "Demonic Essence Pill",
     "Cheonoeshindan": "Azure Jade Divine Pill",
     "Cheonwoeshindan": "Azure Jade Divine Pill",
-    "Blue Mountain Sword": "Blue Mountain Swordsman",
     "***": "{sep}"
 }
 
