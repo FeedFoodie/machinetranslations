@@ -6,8 +6,9 @@
   <meta name="yandex-verification" content="d7fc7dd733bf4b0b" />
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
   {%- assign final_description = site.tagline -%}
-  
+
   {%- capture tag_based_description -%}
     {%- case page.tags.first -%}
       {%- when 'absr' -%}Absolute Regression {{ page.title }}
@@ -22,6 +23,7 @@
     {%- assign final_description = page.description -%}
   {%- endif -%}
   {%- assign page.description = final_description | strip_html | strip_newlines | truncatewords: 25, '...' -%}
+  
   <meta name="description" content="{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}" />
