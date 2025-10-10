@@ -1,6 +1,6 @@
 ---
 layout: pageABSR
-title: I Was Coerced By The Heavenly Demon
+title: Who Coerced You into Becoming The Heavenly Demon?
 description: "Free English fan translation of the novel Absolute Regression. Read all chapters online with no ads or paywalls. Updated regularly."
 ---
 
