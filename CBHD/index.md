@@ -2,6 +2,7 @@
 layout: pageABSR
 title: Who Coerced You into Becoming The Heavenly Demon?
 description: "Free English fan translation of the novel Absolute Regression. Read all chapters online with no ads or paywalls. Updated regularly."
+comments: true
 ---
 
 ![CBHD](/Images/cbhd.jpg)
@@ -18,5 +19,5 @@ Associated Names: 천마하라고 누가 칼들고 협박함, So? Did Someone Fo
 
 Please buy the [Novel Raws](https://series.naver.com/novel/detail.series?productNo=9646548){:target="_blank"} to support the author.
 
-## Chapters
+## Ebook
 
