@@ -22,10 +22,13 @@ replacements = {
     "freelancers": "mercenaries",
     "freelancer": "mercenary",
     "My father": "Father",
+    "his Master": "his master",
     "Blade Demon clan": "Blade Demon Sect",
     "Demonic Esssence Pill": "Demonic Essence Pill",
     "Cheonoeshindan": "Azure Jade Divine Pill",
     "Cheonwoeshindan": "Azure Jade Divine Pill",
+    "Ma-hyeop": "demonic hero",
+    "Cheonhamaeng": "World Alliance",
     "***": "{sep}"
 }
 
