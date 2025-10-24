@@ -29,6 +29,7 @@ replacements = {
     "Cheonwoeshindan": "Azure Jade Divine Pill",
     "Ma-hyeop": "demonic hero",
     "Cheonhamaeng": "World Alliance",
+    "* * *": "{sep}",
     "***": "{sep}"
 }
 
