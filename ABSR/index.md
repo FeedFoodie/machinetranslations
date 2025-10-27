@@ -16,6 +16,10 @@ Associated Names: 절대회귀
 
 That’s how a man's first step toward revenge began.
 
+## Ebooks
+
+[Epub Download](/ABSR/epubs/Absolute Regression - Jang Yeonghun.epub)
+
 ## Raws
 
 Please buy the [Novel Raws](https://series.naver.com/novel/detail.series?productNo=8981942){:target="_blank"} and support the author! If you can't get Naver ID verification, consider buying one of the author's completed novels on [Ridibooks](https://ridibooks.com/author/2790)!
