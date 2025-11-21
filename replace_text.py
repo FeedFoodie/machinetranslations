@@ -29,6 +29,8 @@ replacements = {
     "Cheonwoeshindan": "Azure Jade Divine Pill",
     "Ma-hyeop": "demonic hero",
     "Cheonhamaeng": "World Alliance",
+    "First Young Master": "First Young Lord",
+    "Second Young Master": "Second Young Lord",
     "* * *": "{sep}",
     "***": "{sep}"
 }
