@@ -13,3 +13,6 @@
         - name: "Absolute Regression"
           url: "/ABSR/"
           weight: 2
+        - name: "Complete Novel Epubs"
+          url: "/EPUB/"
+          weight: 2
