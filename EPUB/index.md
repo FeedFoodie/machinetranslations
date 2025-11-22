@@ -1,5 +1,5 @@
 ---
-layout: pageABSR
+layout: pageEPUB
 title: Epub Directory
 description: "Free English fan translation of novels."
 comments: true
