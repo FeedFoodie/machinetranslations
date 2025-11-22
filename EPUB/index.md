@@ -5,6 +5,8 @@ description: "Free English fan translation of novels."
 comments: true
 ---
 
+# Assistant Manager Kim Hates Idols
+
 ![AMKHI](/Images/amkhi.jpg)
 
 Novel Author: Ex-Trainee, 퇴사연습생
