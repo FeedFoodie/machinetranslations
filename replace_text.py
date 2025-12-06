@@ -31,6 +31,7 @@ replacements = {
     "Cheonhamaeng": "World Alliance",
     "First Young Master": "First Young Lord",
     "Second Young Master": "Second Young Lord",
+    "Saintess Palace Lady": "Saintess",
     "* * *": "{sep}",
     "***": "{sep}"
 }
