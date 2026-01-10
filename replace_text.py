@@ -32,6 +32,7 @@ replacements = {
     "First Young Master": "First Young Lord",
     "Second Young Master": "Second Young Lord",
     "Saintess Palace Lady": "Saintess",
+    "true energy": "inner qi",
     "* * *": "{sep}",
     "***": "{sep}"
 }
