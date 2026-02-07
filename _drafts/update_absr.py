@@ -9,7 +9,7 @@ import threading
 import re
 
 # Discord webhook URL
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1468592031356948633/wrJUOxQOeyHKRhUKTKLKCbhMEGqMOkG58YfgierUuCABkbMKnCj-NyWdz9NSnFvfXNDg"
+DISCORD_WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL')
 
 # Series role mapping for Discord mentions
 SERIES_ROLES = {
@@ -31,14 +31,14 @@ def send_discord_notification_async(tag, chapter_num, chapter_id):
             
         role_id = SERIES_ROLES.get(tag.lower())
         role_mention = f"<@&{role_id}>"            
-        message = f"{role_mention} {tag.upper()} Chapter {chapter_num} - https://northbladetl.com/{tag.lower()}/{chapter_id}.html"
+        message = f"{role_mention} {tag.upper()} Chapter {chapter_num} - https://mtl.northbladetl.com/{tag.lower()}/{chapter_id}.html"
         
         try:
             # Create the webhook payload
             payload = {
                 "content": message,
                 "username": "Foodie_Bot",
-                "avatar_url": "https://northbladetl.com/favicon.ico"
+                "avatar_url": "https://mtl.northbladetl.com/favicon.ico"
             }
             
             response = requests.post(DISCORD_WEBHOOK_URL, json=payload, timeout=10)
