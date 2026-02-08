@@ -38,7 +38,7 @@ def send_discord_notification_async(tag, chapter_num, chapter_id):
             payload = {
                 "content": message,
                 "username": "Foodie_Bot",
-                "avatar_url": "https://mtl.northbladetl.com/favicon.ico"
+                "avatar_url": "https://i.imgur.com/U5CiyoG.png"
             }
             
             response = requests.post(DISCORD_WEBHOOK_URL, json=payload, timeout=10)
