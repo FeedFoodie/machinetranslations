@@ -201,7 +201,7 @@ def process_markdown_files():
                     chapter_info['chapter_id']
                 )
                 notification_threads.append(thread)
-            print(f"✓ Scheduled {len(processed_chapters)} Discord notification(s) for 2 minutes from now")
+            print(f"✓ Scheduled {len(processed_chapters)} Discord notification(s) for 3 minutes from now")
             
             if not DISCORD_WEBHOOK_URL or "YOUR_WEBHOOK" in DISCORD_WEBHOOK_URL:
                 print("\n⚠️  IMPORTANT: Discord webhook not configured!")
@@ -210,13 +210,13 @@ def process_markdown_files():
                 print("   2. Replace the DISCORD_WEBHOOK_URL variable at the top of this script")
             
             # Keep the main thread alive to let notifications finish
-            print("\n⏳ Waiting for Discord notifications to be sent (approx. 2 minutes)...")
+            print("\n⏳ Waiting for Discord notifications to be sent (approx. 3 minutes)...")
             print("   You can close the window with Ctrl+C if you want to exit early.")
             
             try:
                 # Wait for all notification threads to complete
                 for thread in notification_threads:
-                    thread.join(timeout=130)  # 2 minutes + 10 seconds buffer
+                    thread.join(timeout=190)  # 2 minutes + 10 seconds buffer
                 
                 print("✅ All Discord notifications sent successfully!")
             except KeyboardInterrupt:
