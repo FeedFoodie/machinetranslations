@@ -62,6 +62,11 @@ hr {
     height: 200px;
 }
 
+.centersell p {
+    font-size:0.8em;
+    margin-bottom: 15px;
+}
+
 .cmb {
     display: block;
 	margin: 0 auto;
