@@ -266,7 +266,7 @@ def process_markdown_files():
             print("\n--- SCHEDULING NOTIFICATIONS ---")
             notification_threads = []
             for chapter_info in processed_chapters:
-                thread = send_discord_notification_async(
+                thread = send_notifications(
                     chapter_info['tag'],
                     chapter_info['chapter_num'],
                     chapter_info['chapter_id']
