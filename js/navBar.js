@@ -1,6 +1,14 @@
-// When the user clicks on the button, toggle between hiding and showing the dropdown content
 function navbarDropdown(id) {
-  document.getElementById(id).classList.toggle("show");
+  // On desktop, do nothing – hover handles it
+  if (window.innerWidth >= 601) {
+    return;
+  }
+  // Mobile: toggle dropdown
+  var dropdown = document.getElementById(id);
+  dropdown.classList.toggle("show");
+  document.querySelectorAll('.dropdown-content.show').forEach(function(el) {
+    if (el.id !== id) el.classList.remove('show');
+  });
 }
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(e) {
