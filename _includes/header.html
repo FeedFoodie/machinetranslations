@@ -16,12 +16,11 @@
         {% for item in site.data.menu %}
           <ul class="menu">
             {% for entry in item.subfolderitems %}
-              <li class="dropdown-holder">   {# new wrapper – keeps your .dropdown inside #}
+              <li class="dropdown-holder">
                 {% if entry.subsubfolderitems[0] %}
-                  {# ---------- DROPDOWN ---------- #}
-                  <div class="dropdown">      {# was <ul class="dropdown"> – now valid #}
+                  <div class="dropdown">
                     <button class="dropbtn header-droplink">{{ entry.name }}</button>
-                    <ul class="dropdown-content">   {# was <div> – now a <ul> so <li> is valid #}
+                    <ul class="dropdown-content">
                       {% for subentry in entry.subsubfolderitems %}
                         <li>
                           <a class="header-dropcontent" href="{{ subentry.url }}" target="_blank">
@@ -32,7 +31,6 @@
                     </ul>
                   </div>
                 {% else %}
-                  {# ---------- SIMPLE LINK ---------- #}
                   <div class="dropdown">
                     <button class="dropbtn header-link" 
                             onclick="window.open('{{ entry.url }}', '_blank')" type="button">
