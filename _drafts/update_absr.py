@@ -37,7 +37,7 @@ def send_ntfy_notification(tag, chapter_num, chapter_id):
     series_name = SERIES_TITLES.get(tag.lower(), tag.upper())
     title = f"{tag.upper()} Chapter {chapter_num}"
     message = f"{series_name} Chapter {chapter_num} has been posted!"
-    url = f"https://northbladetl.com/{tag.lower()}/{chapter_id}.html"
+    url = f"https://mtl.northbladetl.com/{tag.lower()}/{chapter_id}.html"
 
     try:
         response = requests.post(
@@ -48,7 +48,7 @@ def send_ntfy_notification(tag, chapter_num, chapter_id):
                 "Priority": "default",          # can be 'high', 'urgent', etc.
                 "Tags": "loudspeaker,page_facing_up",
                 "Click": url,                  # opens the chapter when tapped
-                "Attach": "https://files.catbox.moe/h4z8gt.png"  # optional icon
+                "Attach": "https://i.imgur.com/U5CiyoG.png"  # optional icon
             },
             timeout=10
         )
@@ -72,7 +72,7 @@ def send_telegram_notification(tag, chapter_num, chapter_id):
     
     series_name = SERIES_TITLES.get(tag.lower(), tag.upper())
     title = f"{tag.upper()} Chapter {chapter_num}"
-    url = f"https://northbladetl.com/{tag.lower()}/{chapter_id}.html"
+    url = f"https://mtl.northbladetl.com/{tag.lower()}/{chapter_id}.html"
     
     # Format: Clean, readable message
     message = f"{series_name} Chapter {chapter_num} has been posted!\n{url}"
@@ -97,7 +97,7 @@ def send_discord_notification(tag, chapter_num, chapter_id):
     if DISCORD_WEBHOOK_URL:
         role_id = SERIES_ROLES.get(tag.lower())
         role_mention = f"<@&{role_id}>"
-        message = f"{role_mention} {tag.upper()} Chapter {chapter_num} - https://northbladetl.com/{tag.lower()}/{chapter_id}.html"
+        message = f"{role_mention} {tag.upper()} Chapter {chapter_num} - https://mtl.northbladetl.com/{tag.lower()}/{chapter_id}.html"
         
         try:
             payload = {
