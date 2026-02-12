@@ -10,48 +10,119 @@ import re
 
 # Discord webhook URL
 DISCORD_WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL')
+# ntfy.sh Topic
+NTFY_TOPIC = os.environ.get('NTFY_TOPIC')
+# Telegram bot configuration
+TELEGRAM_BOT_TOKEN = os.environ.get('TG_BOT_TOKEN')
+TELEGRAM_CHAT_ID = os.environ.get('TGID_NORTHBLADETL')
+
+# Series title mapping
+SERIES_TITLES = {
+    'absr': 'Absolute Regression',
+}
 
 # Series role mapping for Discord mentions
 SERIES_ROLES = {
     'absr': '1408104314366328873',
 }
 
-def send_discord_notification_async(tag, chapter_num, chapter_id):
+def send_ntfy_notification(tag, chapter_num, chapter_id):
     """
-    Schedule a Discord notification to be sent after 5 minutes.
-    This runs in a separate thread to avoid blocking the main script.
+    Send a push notification via ntfy.sh.
     """
-    def send_after_delay():
-        print(f"⏳ Discord notification scheduled for {tag} Chapter {chapter_num} in 3 min...")
-        time.sleep(180)
+    if not NTFY_TOPIC:
+        print("⚠️  ntfy topic not configured. Skipping ntfy notification.")
+        return
+
+    series_name = SERIES_TITLES.get(tag.lower(), tag.upper())
+    title = f"{tag.upper()} Chapter {chapter_num}"
+    message = f"{series_name} Chapter {chapter_num} has been posted!"
+    url = f"https://northbladetl.com/{tag.lower()}/{chapter_id}.html"
+
+    try:
+        response = requests.post(
+            f"https://ntfy.sh/{NTFY_TOPIC}",
+            data=message.encode('utf-8'),
+            headers={
+                "Title": title,
+                "Priority": "default",          # can be 'high', 'urgent', etc.
+                "Tags": "loudspeaker,page_facing_up",
+                "Click": url,                  # opens the chapter when tapped
+                "Attach": "https://files.catbox.moe/h4z8gt.png"  # optional icon
+            },
+            timeout=10
+        )
+
+        if response.status_code == 200:
+            print(f"✅ ntfy notification sent: {title}")
+        else:
+            print(f"⚠️  ntfy returned status {response.status_code}")
+
+    except requests.exceptions.RequestException as e:
+        print(f"❌ Failed to send ntfy notification: {e}")
+    except Exception as e:
+        print(f"❌ Error in ntfy notification: {e}")
+
+from pingram import Pingram
+
+def send_telegram_notification(tag, chapter_num, chapter_id):
+    if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+        print("⚠️  Telegram credentials missing. Skipping Telegram notification.")
+        return
+    
+    series_name = SERIES_TITLES.get(tag.lower(), tag.upper())
+    title = f"{tag.upper()} Chapter {chapter_num}"
+    url = f"https://northbladetl.com/{tag.lower()}/{chapter_id}.html"
+    
+    # Format: Clean, readable message
+    message = f"{series_name} Chapter {chapter_num} has been posted!\n{url}"
+    
+    try:
+        bot = Pingram(token=TELEGRAM_BOT_TOKEN)
+        response = bot.message(
+            chat_id=TELEGRAM_CHAT_ID,
+            text=message
+        )
         
-        if not DISCORD_WEBHOOK_URL or "YOUR_WEBHOOK" in DISCORD_WEBHOOK_URL:
-            print("⚠️  Discord webhook URL not configured. Skipping notification.")
-            return
+        # Pingram returns response object; check status
+        if response.status_code == 200:
+            print(f"✅ Telegram notification sent: {title}")
+        else:
+            print(f"⚠️  Telegram returned status {response.status_code}")
             
+    except Exception as e:
+        print(f"❌ Failed to send Telegram notification: {e}")
+
+def send_discord_notification(tag, chapter_num, chapter_id):
+    if DISCORD_WEBHOOK_URL:
         role_id = SERIES_ROLES.get(tag.lower())
-        role_mention = f"<@&{role_id}>"            
-        message = f"{role_mention} {tag.upper()} Chapter {chapter_num} - https://mtl.northbladetl.com/{tag.lower()}/{chapter_id}.html"
+        role_mention = f"<@&{role_id}>"
+        message = f"{role_mention} {tag.upper()} Chapter {chapter_num} - https://northbladetl.com/{tag.lower()}/{chapter_id}.html"
         
         try:
-            # Create the webhook payload
             payload = {
                 "content": message,
                 "username": "Foodie_Bot",
-                "avatar_url": "https://i.imgur.com/U5CiyoG.png"
+                "avatar_url": "https://files.catbox.moe/h4z8gt.png"
             }
-            
             response = requests.post(DISCORD_WEBHOOK_URL, json=payload, timeout=10)
-            
             if response.status_code == 204:
                 print(f"✅ Discord notification sent: {message}")
             else:
                 print(f"⚠️  Discord webhook returned status {response.status_code}")
-                
-        except requests.exceptions.RequestException as e:
-            print(f"❌ Failed to send Discord notification: {e}")
         except Exception as e:
-            print(f"❌ Error in Discord notification: {e}")
+            print(f"❌ Discord notification error: {e}")
+    else:
+        print("⚠️  Discord webhook not configured – skipping.")    
+
+def send_notifications(tag, chapter_num, chapter_id):
+    def send_after_delay():
+        print(f"⏳ Notifications scheduled for {tag} Chapter {chapter_num}...")
+        time.sleep(180)
+        
+        send_discord_notification(tag, chapter_num, chapter_id)
+        send_ntfy_notification(tag, chapter_num, chapter_id)
+        send_telegram_notification(tag, chapter_num, chapter_id)
     
     # Start the delayed notification in a separate thread
     notification_thread = threading.Thread(target=send_after_delay)
@@ -191,8 +262,8 @@ def process_markdown_files():
         if git_push(public_repo_dir, 'gh-pages'):
             print("✓ Repository updated successfully")
             
-            # Schedule Discord notifications
-            print("\n--- SCHEDULING DISCORD NOTIFICATIONS ---")
+            # Schedule notifications
+            print("\n--- SCHEDULING NOTIFICATIONS ---")
             notification_threads = []
             for chapter_info in processed_chapters:
                 thread = send_discord_notification_async(
@@ -201,24 +272,14 @@ def process_markdown_files():
                     chapter_info['chapter_id']
                 )
                 notification_threads.append(thread)
-            print(f"✓ Scheduled {len(processed_chapters)} Discord notification(s) for 3 minutes from now")
-            
-            if not DISCORD_WEBHOOK_URL or "YOUR_WEBHOOK" in DISCORD_WEBHOOK_URL:
-                print("\n⚠️  IMPORTANT: Discord webhook not configured!")
-                print("   To enable Discord notifications:")
-                print("   1. Create a webhook in your Discord server")
-                print("   2. Replace the DISCORD_WEBHOOK_URL variable at the top of this script")
-            
-            # Keep the main thread alive to let notifications finish
-            print("\n⏳ Waiting for Discord notifications to be sent (approx. 3 minutes)...")
-            print("   You can close the window with Ctrl+C if you want to exit early.")
-            
+            print(f"✓ Scheduled {len(processed_chapters)} notification(s) for 3 minutes from now")
+
             try:
                 # Wait for all notification threads to complete
                 for thread in notification_threads:
-                    thread.join(timeout=190)  # 2 minutes + 10 seconds buffer
+                    thread.join(timeout=200)
                 
-                print("✅ All Discord notifications sent successfully!")
+                print("✅ All notifications sent successfully!")
             except KeyboardInterrupt:
                 print("\n⚠️  Script interrupted. Some notifications may not be sent.")
             except Exception as e:

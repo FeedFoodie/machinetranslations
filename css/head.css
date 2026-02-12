@@ -73,8 +73,8 @@
 
 	.header-droplink {
 		font-size: 18px;
-		margin-left: 150px !important;
-		margin-right: 150px !important;
+		margin-left: 80px !important;
+		margin-right: 80px !important;
 	}
 
 	.menu {
@@ -129,6 +129,10 @@
 
 	.show {
 		display: block;
+	}
+
+	.dropdown:hover .dropdown-content {
+	    display: block;
 	}
 }
 
