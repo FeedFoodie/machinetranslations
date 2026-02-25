@@ -34,6 +34,10 @@ replacements = {
     "Saintess Palace Lady": "Saintess",
     "true energy": "inner qi",
     "complete mastery of the Twelfth Star": "Twelfth Star mastery",
+    "The Blood Heaven Blade Demon Elder": "Elder Blood Heaven Blade Demon",
+    "the Blood Heaven Blade Demon Elder": "Elder Blood Heaven Blade Demon",
+    "The Blade Demon Elder": "Elder Blade Demon",
+    "the Blade Demon Elder": "Elder Blade Demon",
     "* * *": "{sep}",
     "***": "{sep}"
 }
