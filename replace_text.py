@@ -38,6 +38,7 @@ replacements = {
     "the Blood Heaven Blade Demon Elder": "Elder Blood Heaven Blade Demon",
     "The Blade Demon Elder": "Elder Blade Demon",
     "the Blade Demon Elder": "Elder Blade Demon",
+    "Alliance Leader": "Alliance Chairman",
     "* * *": "{sep}",
     "***": "{sep}"
 }
