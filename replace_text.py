@@ -14,7 +14,7 @@ replacements = {
     "saber": "dao",
     " nyang": " taels",
     "Jingyeok": "Blitz",
-    "isolated training": "seclusion training",
+    "Yeong Hwain": "Yeom Hwain",
     "bodyguard martial artist": "bodyguard",
     "temporary Cult Leader": "Acting Cult Leader",
     "Mister": "Uncle",
