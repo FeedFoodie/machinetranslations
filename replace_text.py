@@ -40,6 +40,7 @@ replacements = {
     "the Blade Demon Elder": "Elder Blade Demon",
     "Alliance Leader": "Alliance Chairman",
     "demonic blood": "paralysis acupoint",
+    "Wind Heavenly": "Heavenly Wind",
     "* * *": "{sep}",
     "***": "{sep}"
 }
