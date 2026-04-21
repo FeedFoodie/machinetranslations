@@ -137,26 +137,25 @@ def git_push(repo_path, branch='main'):
         
         print(f"\nPushing changes to {os.path.basename(repo_path)} (branch: {branch})...")
         
-        # Switch to the correct branch
         result = subprocess.run(['git', 'branch', '--show-current'], capture_output=True, text=True)
         current_branch = result.stdout.strip()
         
         if current_branch != branch:
             print(f"  Switching from '{current_branch}' to '{branch}'...")
-            subprocess.run(['git', 'checkout', branch], check=True)
+            subprocess.run(['git', 'checkout', branch], check=True, stdin=subprocess.DEVNULL)
         
-        # Git commands
-        subprocess.run(['git', 'add', '.'], check=True)
+        subprocess.run(['git', 'add', '.'], check=True, stdin=subprocess.DEVNULL)
         
-        # Get number of files changed for commit message
         result = subprocess.run(['git', 'status', '--porcelain'], capture_output=True, text=True)
         changed_files = [line for line in result.stdout.split('\n') if line.strip()]
         file_count = len(changed_files)
         file_word = "file" if file_count == 1 else "files"
         
         commit_message = f"Update: {file_count} {file_word}"
-        subprocess.run(['git', 'commit', '-m', commit_message], check=True)
-        subprocess.run(['git', 'push', 'origin', branch], check=True)
+        subprocess.run(['git', 'commit', '-m', commit_message], check=True, stdin=subprocess.DEVNULL)
+        
+        # -c gc.auto=0 prevents git from running garbage collection during push
+        subprocess.run(['git', '-c', 'gc.auto=0', 'push', 'origin', branch], check=True, stdin=subprocess.DEVNULL)
         
         print(f"✓ Successfully pushed to {os.path.basename(repo_path)} ({branch})")
         
