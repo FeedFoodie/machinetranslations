@@ -18,7 +18,15 @@ That’s how a man's first step toward revenge began.
 
 ## Ebooks
 
-[Epub Download](/ABSR/epubs/Absolute Regression - Jang Yeonghun.epub)
+[Complete Epub Download](/ABSR/epubs/Absolute Regression - Jang Yeonghun.epub)
+
+Split into 3 parts:
+
+[Volume 1 Download](/ABSR/epubs/Absolute Regression V1 - Jang Yeonghun.epub)
+
+[Volume 2 Download](/ABSR/epubs/Absolute Regression V2 - Jang Yeonghun.epub)
+
+[Volume 3 Download](/ABSR/epubs/Absolute Regression V3 - Jang Yeonghun.epub)
 
 ## Raws
 
