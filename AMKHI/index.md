@@ -1,11 +1,9 @@
 ---
-layout: pageEPUB
-title: Epub Directory
-description: "Free English fan translation of novels."
+layout: pageAMKHI
+title: Assistant Manager Kim Hates Idols
+description: "Free English fan translation of the novel Assistant Manager Kim Hates Idols. Read all chapters online with no ads or paywalls. Updated regularly."
 comments: true
 ---
-
-# Assistant Manager Kim Hates Idols
 
 ![AMKHI](/Images/amkhi.jpg)
 
@@ -27,4 +25,7 @@ Please buy the [Novel Raws](https://series.naver.com/novel/detail.series?product
 
 Translated by LyraDhani (1-300) and Foodie (300-610, glossary only)
 
-[Download Link (complete novel)](/EPUB/Ex-Trainee_Assistant Manager Kim Hates Idols.epub)
+[Download Link (complete novel)](/AMKHI/Ex-Trainee_Assistant Manager Kim Hates Idols.epub)
+
+## Chapters
+

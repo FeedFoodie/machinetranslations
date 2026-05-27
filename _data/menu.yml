@@ -23,6 +23,6 @@
         - name: "Absolute Regression"
           url: "/ABSR/"
           weight: 2
-        - name: "Complete Novel Epubs"
-          url: "/EPUB/"
+        - name: "Assistant Manager Kim Hates Idols"
+          url: "/AMKHI/"
           weight: 2
