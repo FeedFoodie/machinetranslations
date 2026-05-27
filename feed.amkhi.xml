@@ -13,7 +13,7 @@ layout: null
         <generator>Jekyll v{{ jekyll.version }}</generator>
         {% for post in site.tags["amkhi"] %}
             <item>
-                <title>amkhi {{ post.title | xml_escape }}</title>
+                <title>AMKHI {{ post.title | xml_escape }}</title>
 				<author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
                 <description>(NorthBladeTL) Assistant Manager Kim Hates Idols - {{ post.url | prepend: site.baseurl | prepend: site.url }}</description>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
