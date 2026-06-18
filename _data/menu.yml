@@ -26,3 +26,6 @@
         - name: "Assistant Manager Kim Hates Idols"
           url: "/AMKHI/"
           weight: 2
+        - name: "Debut or Die"
+          url: "/DOD/"
+          weight: 2
