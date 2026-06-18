@@ -5,7 +5,7 @@ description: "Free English fan translation of the novel Assistant Manager Kim Ha
 comments: true
 ---
 
-![AMKHI](/Images/amkhi.jpg)
+<div align="center"> <img src="/Images/amkhi.jpg" alt="AMKHI"> </div>
 
 Novel Author: Ex-Trainee, 퇴사연습생
 
