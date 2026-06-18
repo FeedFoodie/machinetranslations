@@ -120,7 +120,7 @@ def send_discord_notification(tag, chapter_num, chapter_id):
 def send_notifications(tag, chapter_num, chapter_id):
     def send_after_delay():
         print(f"⏳ Notifications scheduled for {tag} Chapter {chapter_num}...")
-        time.sleep(300)
+        time.sleep(180)
         
         send_discord_notification(tag, chapter_num, chapter_id)
         send_ntfy_notification(tag, chapter_num, chapter_id)
