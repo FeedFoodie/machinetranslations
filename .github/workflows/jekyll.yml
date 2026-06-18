@@ -55,7 +55,7 @@ jobs:
         run: bundle exec jekyll build --incremental --baseurl "${{ steps.pages.outputs.base_path }}"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4  # updated from v3
 
   # Deployment job
   deploy:
@@ -67,7 +67,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5  # updated from v4
 
   # Updated Job: Submit URLs to Search Engines
   submit_urls:
