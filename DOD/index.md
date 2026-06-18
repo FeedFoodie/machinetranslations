@@ -5,7 +5,7 @@ description: "Free English fan translation of the novel Debut or Die. Read all c
 comments: true
 ---
 
-<div align="center"> <img src="/Images/dod.png" alt="DOD"> </div>
+<img src="/Images/dod.png" alt="DOD" style="display: block; margin-left: auto; margin-right: auto;">
 
 Novel Author: Baek Deoksu, 백덕수
 
