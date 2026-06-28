@@ -13,7 +13,7 @@ replacements = {
     "…": "...",
     "saber": "dao",
     " nyang": " taels",
-    "|": "\|",
+    "Demon Cult": "Demonic Cult",
     "bodyguard martial artist": "bodyguard",
     "true energy": "inner qi",
     "demonic blood": "paralysis acupoint",
