@@ -17,6 +17,7 @@ replacements = {
     "bodyguard martial artist": "bodyguard",
     "true energy": "inner qi",
     "demonic blood": "paralysis acupoint",
+    "Yeolyang-gigi": "Yang qi",
     "* * *": "{sep}",
     "***": "{sep}"
 }
