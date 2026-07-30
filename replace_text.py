@@ -18,6 +18,9 @@ replacements = {
     "true energy": "inner qi",
     "demonic blood": "paralysis acupoint",
     "Yeolyang-gigi": "Yang qi",
+    "Dong-eun": "Dong Euion",
+    "Dong-uion": "Dong Euion",
+    "-ssi": "",
     "* * *": "{sep}",
     "***": "{sep}"
 }
