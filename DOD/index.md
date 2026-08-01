@@ -1,5 +1,5 @@
 ---
-layout: pageDOD
+layout: pageEPUB
 title: Debut or Die
 description: "Free English fan translation of the novel Debut or Die. Read all chapters with no ads or paywalls. Updated regularly."
 comments: true

@@ -30,7 +30,7 @@ Split into 3 parts:
 
 ## Raws
 
-Please buy the [Novel Raws](https://series.naver.com/novel/detail.series?productNo=8981942){:target="_blank"} and support the author! If you can't get Naver ID verification, consider buying one of the author's completed novels on [Ridibooks](https://ridibooks.com/author/2790)!
+Please buy the [Novel Raws](https://series.naver.com/novel/detail.series?productNo=8981942){:target="_blank"} or [Official Manhwa Translation](https://www.webtoons.com/en/fantasy/absolute-regression/list?title_no=7004){:target="_blank"} and support the author!
 
 ## Chapters
 

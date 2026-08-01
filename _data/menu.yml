@@ -29,3 +29,6 @@
         - name: "Debut or Die"
           url: "/DOD/"
           weight: 2
+        - name: "Trashy PD Has To Survive as an Idol"
+          url: "/TPD/"
+          weight: 2
