@@ -10,17 +10,8 @@ kramdown:
   smart_quotes: ["apos", "apos", "quot", "quot"]
 permalink: /:categories/:title:output_ext
 logo: /android-chrome-512x512.png
-pagination:
-  enabled: true
-  per_page: 20
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-
-
 # Build settings
 plugins:
-  - jekyll-feed
+  #- jekyll-feed
   - jekyll-sitemap
   #- jekyll-seo-tag
-  - jekyll-paginate-v2

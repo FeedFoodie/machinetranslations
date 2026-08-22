@@ -23,7 +23,7 @@ def create_markdown_files_cli():
     yaml_date = now.strftime("%Y-%m-%d %H:%M:%S +0800")
 
     yaml_content = f"""---
-layout: postAMKHI
+layout: post
 title: ""
 comments: true
 tags: [amkhi]

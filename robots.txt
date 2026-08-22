@@ -4,6 +4,11 @@
 # Allow all search engines by default, but disallow specific chapter directories.
 User-agent: *
 Allow: /
+Disallow: /hunnypot.html
+
+# Explicitly allow the Novel-Updates bot.
+User-agent: NUBot
+Allow: /
 
 # Block common scrapers, content aggregators, and AI data collectors.
 # Add or remove bots from this list as needed.

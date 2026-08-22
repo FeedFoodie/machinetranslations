@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="yandex-verification" content="d7fc7dd733bf4b0b" />
-  <link rel="stylesheet" href="/assets/main.css?v=1.07">
+  <link rel="stylesheet" href="/assets/main.css?v=1.26">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
   {%- assign final_description = site.tagline -%}
@@ -12,6 +12,7 @@
   {%- capture tag_based_description -%}
     {%- case page.tags.first -%}
       {%- when 'absr' -%}Absolute Regression {{ page.title }}
+      {%- when 'amkhi' -%}Assistant Manager Kim Hates Idols {{ page.title }}
     {%- endcase -%}
   {%- endcapture -%}
 
@@ -22,7 +23,6 @@
   {%- if page.description -%}
     {%- assign final_description = page.description -%}
   {%- endif -%}
-  {%- assign page.description = final_description | strip_html | strip_newlines | truncatewords: 25, '...' -%}
   
   <meta name="description" content="{{ final_description | strip_html | strip_newlines | truncatewords: 25, '...' }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
@@ -30,18 +30,17 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
 
-  {%- feed_meta -%}
-
   <!-- highlight.js support -->
   <link rel="stylesheet" href="/js/highlightjs/styles/format.css">
   <link rel="stylesheet" href="/js/highlightjs/styles/ssms.css" />
-  <link rel="stylesheet" href="/css/design.css?v=1.01">
-  <link rel="stylesheet" href="/css/head.css?v=1.05">
+  <link rel="stylesheet" href="/css/designs.css?v=1.05">
+  <link rel="stylesheet" href="/css/head.css?v=1.32">
+  <link rel="stylesheet" href="/css/header.css?v=1.05">
   <script type="text/javascript" src="/js/highlightjs/highlight.min.js"></script>
   <script type="text/javascript" src="/js/highlightjs/languages/plaintext.min.js"></script>
   <script type="text/javascript" src="/js/highlightjs/languages/powershell.min.js"></script>
   <script type="text/javascript" src="/js/highlightjs/languages/tsql.min.js"></script>
-  <script type="text/javascript" src="/js/navBar.js?v=1.03"></script>
+  <script type="text/javascript" src="/js/navBar.js?v=1.09"></script>
   <script type="text/javascript"> hljs.highlightAll(); </script>
   <!-- end highlight.js support -->
   

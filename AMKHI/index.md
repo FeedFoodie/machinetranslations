@@ -1,5 +1,6 @@
 ---
-layout: pageAMKHI
+layout: pagewithcomments
+tag: [amkhi]
 title: Assistant Manager Kim Hates Idols
 description: "Free English fan translation of the novel Assistant Manager Kim Hates Idols. Read all chapters online with no ads or paywalls. Updated regularly."
 comments: true

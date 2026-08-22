@@ -5,24 +5,101 @@ layout: null
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Assistant Manager Kim Hates Idols</title>
-        <description>{{ site.description | xml_escape }}</description>
-        <link>{{ site.url }}{{ site.baseurl }}</link>
-        <atom:link href="{{ "/feed.amkhi.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-        <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-        <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-        <generator>Jekyll v{{ jekyll.version }}</generator>
-        {% for post in site.tags["amkhi"] %}
-            <item>
-                <title>AMKHI {{ post.title | xml_escape }}</title>
-				<author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
-                <description>(NorthBladeTL) Assistant Manager Kim Hates Idols - {{ post.url | prepend: site.baseurl | prepend: site.url }}</description>
-                <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-                <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-                <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-                {% for tag in post.tags %}
-                <category>{{ tag | xml_escape }}</category>
-                {% endfor %}
-            </item>
-        {% endfor %}
+        <description>BananaTL - Assistant Manager Kim Hates Idols Chapter Updates</description>
+        <link>https://mtl.northbladetl.com/amkhi/</link>
+        <atom:link href="https://mtl.northbladetl.com/feed.amkhi.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Sat, 22 Aug 2026 16:48:50 +0800</pubDate>
+        <lastBuildDate>Sat, 22 Aug 2026 16:48:50 +0800</lastBuildDate>
+        <generator>BananaTL RSS Generator</generator>
+        <item>
+            <title>AMKHI SS Chapter 131: A New Start</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(BananaTL) Assistant Manager Kim Hates Idols Chapter Update - https://mtl.northbladetl.com/amkhi/AMKHI741.html</description>
+            <pubDate>Mon, 17 Aug 2026 22:46:24 +0800</pubDate>
+            <link>https://mtl.northbladetl.com/amkhi/AMKHI741.html</link>
+            <guid isPermaLink="true">https://mtl.northbladetl.com/amkhi/AMKHI741.html</guid>
+            <category>amkhi</category>
+        </item>
+        <item>
+            <title>AMKHI SS Chapter 130: Project Closing the Distance (4)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(BananaTL) Assistant Manager Kim Hates Idols Chapter Update - https://mtl.northbladetl.com/amkhi/AMKHI740.html</description>
+            <pubDate>Mon, 17 Aug 2026 22:43:23 +0800</pubDate>
+            <link>https://mtl.northbladetl.com/amkhi/AMKHI740.html</link>
+            <guid isPermaLink="true">https://mtl.northbladetl.com/amkhi/AMKHI740.html</guid>
+            <category>amkhi</category>
+        </item>
+        <item>
+            <title>AMKHI SS Chapter 129: Project Closing the Distance (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(BananaTL) Assistant Manager Kim Hates Idols Chapter Update - https://mtl.northbladetl.com/amkhi/AMKHI739.html</description>
+            <pubDate>Mon, 17 Aug 2026 22:39:34 +0800</pubDate>
+            <link>https://mtl.northbladetl.com/amkhi/AMKHI739.html</link>
+            <guid isPermaLink="true">https://mtl.northbladetl.com/amkhi/AMKHI739.html</guid>
+            <category>amkhi</category>
+        </item>
+        <item>
+            <title>AMKHI SS Chapter 128: Project Closing the Distance (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(BananaTL) Assistant Manager Kim Hates Idols Chapter Update - https://mtl.northbladetl.com/amkhi/AMKHI738.html</description>
+            <pubDate>Mon, 17 Aug 2026 22:34:03 +0800</pubDate>
+            <link>https://mtl.northbladetl.com/amkhi/AMKHI738.html</link>
+            <guid isPermaLink="true">https://mtl.northbladetl.com/amkhi/AMKHI738.html</guid>
+            <category>amkhi</category>
+        </item>
+        <item>
+            <title>AMKHI SS Chapter 127: Project Closing the Distance (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(BananaTL) Assistant Manager Kim Hates Idols Chapter Update - https://mtl.northbladetl.com/amkhi/AMKHI737.html</description>
+            <pubDate>Mon, 17 Aug 2026 22:26:18 +0800</pubDate>
+            <link>https://mtl.northbladetl.com/amkhi/AMKHI737.html</link>
+            <guid isPermaLink="true">https://mtl.northbladetl.com/amkhi/AMKHI737.html</guid>
+            <category>amkhi</category>
+        </item>
+        <item>
+            <title>AMKHI SS Chapter 126: Tuning in Live (4)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(BananaTL) Assistant Manager Kim Hates Idols Chapter Update - https://mtl.northbladetl.com/amkhi/AMKHI736.html</description>
+            <pubDate>Mon, 17 Aug 2026 22:24:05 +0800</pubDate>
+            <link>https://mtl.northbladetl.com/amkhi/AMKHI736.html</link>
+            <guid isPermaLink="true">https://mtl.northbladetl.com/amkhi/AMKHI736.html</guid>
+            <category>amkhi</category>
+        </item>
+        <item>
+            <title>AMKHI SS Chapter 125: Tuning In Live (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(BananaTL) Assistant Manager Kim Hates Idols Chapter Update - https://mtl.northbladetl.com/amkhi/AMKHI735.html</description>
+            <pubDate>Mon, 17 Aug 2026 22:20:36 +0800</pubDate>
+            <link>https://mtl.northbladetl.com/amkhi/AMKHI735.html</link>
+            <guid isPermaLink="true">https://mtl.northbladetl.com/amkhi/AMKHI735.html</guid>
+            <category>amkhi</category>
+        </item>
+        <item>
+            <title>AMKHI SS Chapter 124: Tuning in Live (2)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(BananaTL) Assistant Manager Kim Hates Idols Chapter Update - https://mtl.northbladetl.com/amkhi/AMKHI734.html</description>
+            <pubDate>Mon, 17 Aug 2026 21:38:28 +0800</pubDate>
+            <link>https://mtl.northbladetl.com/amkhi/AMKHI734.html</link>
+            <guid isPermaLink="true">https://mtl.northbladetl.com/amkhi/AMKHI734.html</guid>
+            <category>amkhi</category>
+        </item>
+        <item>
+            <title>AMKHI SS Chapter 123: Tuning in Live (1)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(BananaTL) Assistant Manager Kim Hates Idols Chapter Update - https://mtl.northbladetl.com/amkhi/AMKHI733.html</description>
+            <pubDate>Mon, 17 Aug 2026 20:17:09 +0800</pubDate>
+            <link>https://mtl.northbladetl.com/amkhi/AMKHI733.html</link>
+            <guid isPermaLink="true">https://mtl.northbladetl.com/amkhi/AMKHI733.html</guid>
+            <category>amkhi</category>
+        </item>
+        <item>
+            <title>AMKHI SS Chapter 122: Waiting Time (3)</title>
+            <author>somethingrandom@somethingrandom.com (FoodieMonster007)</author>
+            <description>(BananaTL) Assistant Manager Kim Hates Idols Chapter Update - https://mtl.northbladetl.com/amkhi/AMKHI732.html</description>
+            <pubDate>Mon, 17 Aug 2026 20:13:38 +0800</pubDate>
+            <link>https://mtl.northbladetl.com/amkhi/AMKHI732.html</link>
+            <guid isPermaLink="true">https://mtl.northbladetl.com/amkhi/AMKHI732.html</guid>
+            <category>amkhi</category>
+        </item>
     </channel>
 </rss>

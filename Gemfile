@@ -7,10 +7,9 @@ gem "logger"
 
 # Your site's plugins
 group :jekyll_plugins do
-  gem "jekyll-feed"
+  #gem "jekyll-feed"
   gem "jekyll-sitemap"
-  gem "jekyll-seo-tag"
-  gem "jekyll-paginate-v2"
+  #gem "jekyll-seo-tag"
 end
 
 # Windows-specific gems for local development

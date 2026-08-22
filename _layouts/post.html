@@ -1,39 +1,115 @@
 ---
 layout: default
 ---
-<link href="/css/override.css" rel="stylesheet" type="text/css">
+<link href="/css/override.css?v=1.02" rel="stylesheet" type="text/css">
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+{% assign url_parts = page.url | split: '/' %}
+{% assign series_tag = url_parts[1] | downcase %}
+{% assign series_data = site.data.series[series_tag] %}
+{% assign chapter_from_url = url_parts[2] | remove: '.html' %}
+{% assign toc_data = site.data.toc[series_tag] %}
+{% assign current_post = nil %}
 
-  <header class="post-header">
-  <p><br /><p>
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {% assign author = page.author | default: site.author %}
-      {%- if author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- endif -%}</p>
-  </header>
+{% if toc_data %}
+  {% for post in toc_data %}
+    {% if post.chapter_id == chapter_from_url %}
+      {% assign current_post = post %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
-  <div class="post-content e-content" itemprop="articleBody">
-	<div style="font-size: 16px;" id="content">					
-		<p class="foodie" style="text-align:right"><b>Day/Night Mode:</b> 
-			<button type="button" onclick="changeWrapColor()" name="btn4">Change Mode</button>		
-		</p>
-		<p class="foodie" style="text-align:right"><b>Change Font Size:</b> 
-			<button type="button" onclick="changeFontSize(-1)" name="btn1">-A</button>  
-			<button type="button" onclick="changeFontSize(0)" name="btn2">A</button>  
-			<button type="button" onclick="changeFontSize(1)" name="btn3">A+</button>
-		</p>
-		<p class="foodie"  style="opacity: 1;">TL: FoodieMonster007; ED: TheGreatT20 <span style="opacity: 0;">If you see this, you are at the wrong site!</span></p>
-		<p class="foodie"><br /></p>
-		{{ content }}
-	</div>
+{% assign date_parts = current_post.date | split: ' ' %}
+{% assign date_only = date_parts[0] %}
+{% assign time_only = date_parts[1] %}
+{% assign tz_raw = date_parts[2] %}
+{% assign tz_hours = tz_raw | slice: 0, 3 %}
+{% assign tz_minutes = tz_raw | slice: 3, 2 %}
+{% assign tz_formatted = tz_hours | append: ':' | append: tz_minutes %}
+
+<header id="chapter-title" class="post-header">
+  <br />
+  {% if series_data %}
+    <h2>{{ series_data.full_name }}</h2>
+  {% else %}
+    <h2>{{ series_tag | upcase }}</h2>
+  {% endif %}
+  
+  <h1 id="chapterTitle" class="post-title p-name" itemprop="name headline">
+    {{ current_post.title | escape }}
+  </h1>
+  <p class="post-meta">
+    <time class="dt-published" datetime="{{ date_only }}T{{ time_only }}{{ tz_formatted }}" itemprop="datePublished">
+      {{ date_only }}
+    </time>
+  </p>
+</header>
+
+  <div class="post-content e-content" itemprop="articleBody" lang="ko"> 
+    <div style="font-size: 16px;" id="content">
+      {% include JS_buttons.html %}
+      <div id="navibar">
+        <p>Loading chapter...</p>
+      </div>
+    </div>
+  <hr>
+    <div class="centersel">
+      <select class="cmb" onchange="location = this.value;" style="width: 350px">
+        <option value="">Select a chapter...</option>
+        {% for post in toc_data %}
+          {% assign current_chapter_id = page.name | remove: '.html' | remove: '.md' %}
+          <option value="{{ post.url }}" {% if post.chapter_id == current_chapter_id %}selected{% endif %}>
+            {{ post.title }}
+          </option>
+        {% endfor %}
+      </select>
+      <p><br /></p>
+    </div>
+    <div class="post_navi" style="font-size: 16px">
+      {% if current_post and current_post.prev_url %}
+        <a class="post_navi-item nav_prev" href="{{ current_post.prev_url }}" title="{{ current_post.prev_title }}">
+          <div class="post_navi-arrow">&lt;</div>
+          <div class="post_navi-label">Previous Chapter</div>
+          <div><span>{{ current_post.prev_title }}</span></div>
+        </a>
+      {% else %}
+        <a class="post_navi-item nav_prev" href="/{{ series_tag | upcase }}/" title="Chapters">
+          <div class="post_navi-arrow">&lt;</div>
+          <div class="post_navi-label">Chapters</div>
+          <div><span>Chapters</span></div>
+        </a>
+      {% endif %}
+      
+      {% if current_post and current_post.next_url %}
+        <a class="post_navi-item nav_next" href="{{ current_post.next_url }}" title="{{ current_post.next_title }}">
+          <div class="post_navi-arrow">&gt;</div>
+          <div class="post_navi-label">Next Chapter</div>
+          <div><span>{{ current_post.next_title }}</span></div>
+        </a>
+      {% else %}
+        <a class="post_navi-item nav_next" href="/{{ series_tag | upcase }}/" title="Chapters">
+          <div class="post_navi-arrow">&gt;</div>
+          <div class="post_navi-label">Chapters</div>
+          <div><span>Chapters</span></div>
+        </a>
+      {% endif %}
+    </div>
+
+    {% if series_data %}
+      {% if series_data.needs_extra_height %}
+        <div class="centersel" style="height:100px">
+      {% else %}
+        <div class="centersel">
+      {% endif %}
+        <p><br /></p>
+        <p>Subscribe to Updates via <a href="{{ 'feed.' | append: series_tag | append: '.xml' | relative_url }}" target="_blank">RSS</a>, <a href="https://discord.gg/s3AsADMkNQ" target="_blank">Discord</a>, <a href="https://t.me/+BlyKhQ3IYu9jNGI1" target="_blank">Telegram</a>, or <a href="https://ntfy.sh/NorthBladeTL" target="_blank">NTFY</a>!</p>
+        {{ series_data.extra_html }}
+        <p><br /></p>
+      </div>
+    {% endif %}
+
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
- {% include disqus_comments.html %}
+{% include fastcomments.html %}

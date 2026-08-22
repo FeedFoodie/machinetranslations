@@ -31,14 +31,15 @@ function setSelectedFont(fontName) {
     //const content = document.getElementById("navibar");
     const wrapper = document.getElementById("wrappertext");
     //const chapterTitle = document.getElementById("chapterTitle");
+    let fontFamily = '"Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
 
-    let fontFamily = 'inherit';
     switch(fontName) {
-        case 'default': fontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
-        case 'SFProText': fontFamily = '"SFProText", sans-serif'; break;
-        case 'Selawik': fontFamily = '"Selawik", sans-serif'; break;
-        case 'NotoSans': fontFamily = '"NotoSans", sans-serif'; break;
-        case 'Literata': fontFamily = '"Literata", serif'; break;
+        case 'Helvetica': fontFamily = '"Helvetica", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
+        case 'NotoSans': fontFamily = '"NotoSans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
+        case 'Literata': fontFamily = '"Literata", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
+        case 'SFProText': fontFamily = '"SFProText", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
+        case 'Selawik': fontFamily = '"Selawik", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'; break;
+        default: fontName = 'Helvetica'; break;
     }
 
     [wrapper].forEach(el => {
@@ -101,7 +102,7 @@ function applySavedSettings() {
     }
     
     // Apply saved font
-    const savedFont = localStorage.getItem("selectedFont") || "default";
+    const savedFont = localStorage.getItem("selectedFont") || "Helvetica";
     if (savedFont) {
         setSelectedFont(savedFont);
         const fontSelect = document.getElementById("fontSelect");

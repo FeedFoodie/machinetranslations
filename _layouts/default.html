@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% assign first_tag = page.tags | first %}
+{% assign series_data = nil %}
+{% if first_tag and site.data.series[first_tag] %}
+  {% assign series_data = site.data.series[first_tag] %}
+{% endif %}
 
 {%- include head.html -%}
 
   <body style="background-color: #121212;">
 
     {%- include header.html -%}
-	{% include chapter_tagging.html %}
 	
 	<main class="page-content" aria-label="Content">
       <div id="wrappertext" class="wrapper night-mode">
@@ -14,7 +18,7 @@
         {% assign output = content			
 			| replace: '{sep}', '<img src="/Images/sep.png" alt="sep">'
 			| replace: '<div class="footnotes" role="doc-endnotes">', '<hr><h3>Footnotes:</h3><div class="footnotes" role="doc-endnotes">'
-			| replace: '<p>', '<p class="foodie">'
+			| replace: '<p>', '<p class="fooodie">'
 			| replace: '<blockquote>', '<blockquote class="night-mode-quotes">'
 			| replace: '@[', '<span class="night-mode-quotes">'
 			| replace: ']@', '</span>'
@@ -23,8 +27,13 @@
       </div>
     </main>
 
-    {%- include footer.html -%}
+		<a href="/hunnypot.html" style="position:absolute; left:-9999px; top:-9999px;"></a>
+
+		{%- include footer.html -%}
+    {%- include protected_post.html -%}
 
   </body>
 
+
+<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
 </html>
