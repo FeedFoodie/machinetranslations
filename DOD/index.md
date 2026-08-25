@@ -35,4 +35,6 @@ Translated by LyraDhani (1-200), Chovrs (201-421) and Foodie (422-645)
 
 [Download Link (complete novel)](/DOD/Baek Deoksu_Debut or Die.epub)
 
+[Read Online](https://ireum.pages.dev/book/debut/){:target="_blank"}
+
 I will not be posting the chapters online as this series is very dmca prone.
