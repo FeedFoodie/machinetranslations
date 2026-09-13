@@ -1677,8 +1677,118 @@
     "date": "2026-09-13 16:38:16 +0800",
     "url": "/amkhi/AMKHI751.html",
     "prev_url": "/amkhi/AMKHI750.html",
-    "next_url": null,
+    "next_url": "/amkhi/AMKHI752.html",
     "prev_title": "SS Chapter 140: Leak Countermeasure Task Force (2)",
+    "next_title": "SS Chapter 142: Industry Telepathy (1)"
+  },
+  {
+    "title": "SS Chapter 142: Industry Telepathy (1)",
+    "chapter_id": "AMKHI752",
+    "chapter_num": 752,
+    "date": "2026-09-13 23:13:37 +0800",
+    "url": "/amkhi/AMKHI752.html",
+    "prev_url": "/amkhi/AMKHI751.html",
+    "next_url": "/amkhi/AMKHI753.html",
+    "prev_title": "SS Chapter 141: Eyewitness Account",
+    "next_title": "SS Chapter 143: Industry Telepathy (2)"
+  },
+  {
+    "title": "SS Chapter 143: Industry Telepathy (2)",
+    "chapter_id": "AMKHI753",
+    "chapter_num": 753,
+    "date": "2026-09-13 23:14:07 +0800",
+    "url": "/amkhi/AMKHI753.html",
+    "prev_url": "/amkhi/AMKHI752.html",
+    "next_url": "/amkhi/AMKHI754.html",
+    "prev_title": "SS Chapter 142: Industry Telepathy (1)",
+    "next_title": "SS Chapter 144: A Certain Guy’s Ordinary Day (1)"
+  },
+  {
+    "title": "SS Chapter 144: A Certain Guy’s Ordinary Day (1)",
+    "chapter_id": "AMKHI754",
+    "chapter_num": 754,
+    "date": "2026-09-13 23:14:33 +0800",
+    "url": "/amkhi/AMKHI754.html",
+    "prev_url": "/amkhi/AMKHI753.html",
+    "next_url": "/amkhi/AMKHI755.html",
+    "prev_title": "SS Chapter 143: Industry Telepathy (2)",
+    "next_title": "SS Chapter 145: A Certain Guy’s Ordinary Day (2)"
+  },
+  {
+    "title": "SS Chapter 145: A Certain Guy’s Ordinary Day (2)",
+    "chapter_id": "AMKHI755",
+    "chapter_num": 755,
+    "date": "2026-09-13 23:14:55 +0800",
+    "url": "/amkhi/AMKHI755.html",
+    "prev_url": "/amkhi/AMKHI754.html",
+    "next_url": "/amkhi/AMKHI756.html",
+    "prev_title": "SS Chapter 144: A Certain Guy’s Ordinary Day (1)",
+    "next_title": "SS Chapter 146: A Certain Guy’s Ordinary Day (3)"
+  },
+  {
+    "title": "SS Chapter 146: A Certain Guy’s Ordinary Day (3)",
+    "chapter_id": "AMKHI756",
+    "chapter_num": 756,
+    "date": "2026-09-13 23:15:22 +0800",
+    "url": "/amkhi/AMKHI756.html",
+    "prev_url": "/amkhi/AMKHI755.html",
+    "next_url": "/amkhi/AMKHI757.html",
+    "prev_title": "SS Chapter 145: A Certain Guy’s Ordinary Day (2)",
+    "next_title": "SS Chapter 147: A Certain Guy’s Special Day"
+  },
+  {
+    "title": "SS Chapter 147: A Certain Guy’s Special Day",
+    "chapter_id": "AMKHI757",
+    "chapter_num": 757,
+    "date": "2026-09-13 23:15:43 +0800",
+    "url": "/amkhi/AMKHI757.html",
+    "prev_url": "/amkhi/AMKHI756.html",
+    "next_url": "/amkhi/AMKHI758.html",
+    "prev_title": "SS Chapter 146: A Certain Guy’s Ordinary Day (3)",
+    "next_title": "SS Chapter 148: Coral Bleaching (1)"
+  },
+  {
+    "title": "SS Chapter 148: Coral Bleaching (1)",
+    "chapter_id": "AMKHI758",
+    "chapter_num": 758,
+    "date": "2026-09-13 23:16:02 +0800",
+    "url": "/amkhi/AMKHI758.html",
+    "prev_url": "/amkhi/AMKHI757.html",
+    "next_url": "/amkhi/AMKHI759.html",
+    "prev_title": "SS Chapter 147: A Certain Guy’s Special Day",
+    "next_title": "SS Chapter 149: Coral Bleaching (2)"
+  },
+  {
+    "title": "SS Chapter 149: Coral Bleaching (2)",
+    "chapter_id": "AMKHI759",
+    "chapter_num": 759,
+    "date": "2026-09-13 23:16:36 +0800",
+    "url": "/amkhi/AMKHI759.html",
+    "prev_url": "/amkhi/AMKHI758.html",
+    "next_url": "/amkhi/AMKHI760.html",
+    "prev_title": "SS Chapter 148: Coral Bleaching (1)",
+    "next_title": "SS Chapter 150: Coral Bleaching (3)"
+  },
+  {
+    "title": "SS Chapter 150: Coral Bleaching (3)",
+    "chapter_id": "AMKHI760",
+    "chapter_num": 760,
+    "date": "2026-09-13 23:16:56 +0800",
+    "url": "/amkhi/AMKHI760.html",
+    "prev_url": "/amkhi/AMKHI759.html",
+    "next_url": "/amkhi/AMKHI761.html",
+    "prev_title": "SS Chapter 149: Coral Bleaching (2)",
+    "next_title": "SS Chapter 151: Coral Bleaching (4)"
+  },
+  {
+    "title": "SS Chapter 151: Coral Bleaching (4)",
+    "chapter_id": "AMKHI761",
+    "chapter_num": 761,
+    "date": "2026-09-13 23:17:18 +0800",
+    "url": "/amkhi/AMKHI761.html",
+    "prev_url": "/amkhi/AMKHI760.html",
+    "next_url": null,
+    "prev_title": "SS Chapter 150: Coral Bleaching (3)",
     "next_title": null
   }
 ]
