@@ -39,6 +39,6 @@ Please buy the [Official Manhwa Translation](https://tapas.io/series/the-rogue-p
 
 Translated by Noodle Brain Squad (1-210) and Foodie (211-SS71)
 
-[Download Link (complete novel)](/TPD/Moonjin_The Trashy PD Has To Survive as an Idol.epub)
+[Download Link (complete novel)](/TPD/epubs/Moonjin_The Trashy PD Has To Survive as an Idol.epub)
 
 I will not be posting the chapters online because I'm lazy.

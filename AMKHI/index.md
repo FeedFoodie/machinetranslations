@@ -26,7 +26,7 @@ Please buy the [Novel Raws](https://series.naver.com/novel/detail.series?product
 
 Translated by LyraDhani (1-300) and Foodie (300-610, glossary only)
 
-[Download Link (complete novel)](/AMKHI/Ex-Trainee_Assistant Manager Kim Hates Idols.epub)
+[Download Link (complete novel)](/AMKHI/epubs/Ex-Trainee_Assistant Manager Kim Hates Idols.epub)
 
 ## Chapters
 

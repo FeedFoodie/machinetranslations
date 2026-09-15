@@ -33,7 +33,7 @@ Please buy the [Official Novel Translation](https://tapas.io/series/debut-or-die
 
 Translated by LyraDhani (1-200), Chovrs (201-421) and Foodie (422-645)
 
-[Download Link (complete novel)](/DOD/Baek Deoksu_Debut or Die.epub)
+[Download Link (complete novel)](/DOD/epubs/Baek Deoksu_Debut or Die.epub)
 
 [Read Online](https://ireum.pages.dev/book/debut/){:target="_blank"}
 
