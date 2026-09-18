@@ -15,3 +15,8 @@ plugins:
   #- jekyll-feed
   - jekyll-sitemap
   #- jekyll-seo-tag
+
+# Jekyll excludes dotfiles/dot-directories by default; explicitly include this one
+# so /.well-known/traffic-advice actually gets published.
+include:
+  - ".well-known"
